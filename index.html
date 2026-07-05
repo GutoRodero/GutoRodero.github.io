@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carlos Rodero — Full Stack Developer</title>
+<meta name="description" content="Portfólio de Carlos Augusto Emiliano Lemes Rodero — Desenvolvedor Full Stack, Bacharel em Sistemas de Informação.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👨‍💻%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-dot"></span>
+      <span>carlos.rodero</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#sobre">sobre</a></li>
+      <li><a href="#formacao">formação</a></li>
+      <li><a href="projetos.html">projetos</a></li>
+      <li><a href="#contato">contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-eyebrow">Olá — meu nome é</div>
+    <h1>Carlos Augusto<br><span class="accent">Emiliano Lemes Rodero</span>.</h1>
+    <div class="role">
+      <span>&lt; Full Stack Developer /&gt;</span><span class="cursor"></span>
+    </div>
+    <p class="lead">
+      Bacharel em <strong style="color:var(--text-0)">Sistemas de Informação</strong>, com formação técnica em Assistente de TI e <strong style="color:var(--text-0)">3 anos de experiência</strong> profissional
+      construindo soluções web escaláveis. Aqui você encontra meus projetos — do Python à visão computacional, do PHP ao Flutter.
+    </p>
+
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="projetos.html">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        Ver projetos
+      </a>
+      <a class="btn btn-ghost" href="mailto:gutorodero227@gmail.com">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Entrar em contato
+      </a>
+    </div>
+
+    <!-- Terminal card -->
+    <div class="terminal reveal">
+      <div class="terminal-head">
+        <span class="terminal-dot r"></span>
+        <span class="terminal-dot y"></span>
+        <span class="terminal-dot g"></span>
+        <span class="terminal-title">~ / carlos — zsh</span>
+      </div>
+      <div class="terminal-body">
+        <div><span class="prompt">$</span> whoami --verbose</div>
+        <div style="margin-top:14px">
+          <span class="punct">{</span><br>
+          &nbsp;&nbsp;<span class="key">"nome"</span><span class="punct">:</span> <span class="str">"Carlos Rodero"</span><span class="punct">,</span><br>
+          &nbsp;&nbsp;<span class="key">"idade"</span><span class="punct">:</span> <span class="val">22</span><span class="punct">,</span><br>
+          &nbsp;&nbsp;<span class="key">"cargo"</span><span class="punct">:</span> <span class="str">"Full Stack Developer"</span><span class="punct">,</span><br>
+          &nbsp;&nbsp;<span class="key">"experiencia"</span><span class="punct">:</span> <span class="str">"3 anos como Full Stack"</span><span class="punct">,</span><br>
+          &nbsp;&nbsp;<span class="key">"formacao"</span><span class="punct">:</span> <span class="str">"Bacharel em Sistemas de Informação"</span><span class="punct">,</span><br>
+          &nbsp;&nbsp;<span class="key">"ingles"</span><span class="punct">:</span> <span class="str">"B2 - Intermediário"</span><span class="punct">,</span><br>
+          &nbsp;&nbsp;<span class="key">"stack"</span><span class="punct">:</span> <span class="punct">[</span><span class="str">"Java"</span><span class="punct">,</span> <span class="str">"Python"</span><span class="punct">,</span> <span class="str">"JS"</span><span class="punct">,</span> <span class="str">"PHP"</span><span class="punct">,</span> <span class="str">"Flutter"</span><span class="punct">]</span><span class="punct">,</span><br>
+          &nbsp;&nbsp;<span class="key">"localizacao"</span><span class="punct">:</span> <span class="str">"Votuporanga, SP"</span><br>
+          <span class="punct">}</span>
+        </div>
+        <div style="margin-top:16px"><span class="prompt">$</span> <span style="border-right:2px solid var(--accent); animation: blink 1s steps(2) infinite; padding-right:2px">&nbsp;</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- About + Info -->
+<section id="sobre">
+  <div class="container">
+    <div class="section-label">01 — sobre</div>
+    <h2 class="section-title">Um pouco <span class="muted">sobre mim.</span></h2>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Sou <strong>Desenvolvedor Full Stack</strong> com <strong>3 anos de experiência</strong> profissional. Iniciei minha carreira
+          na <strong>NKN Digital</strong>, onde comecei como estagiário e evoluí até desenvolvedor Full Stack — hoje busco novas oportunidades
+          e desafios. Minha jornada começou muito antes da faculdade, passando pelos cursos técnicos do <strong>SENAC</strong> em Montagem
+          e Reparo de Computadores, Redes e Assistente de TI.
+        </p>
+        <p>
+          Sou <strong>Bacharel em Sistemas de Informação</strong> — formação concluída no Instituto Federal —, complementando a base acadêmica
+          com cursos livres em Java, Lógica de Programação, POO e Qualidade de Software pela Dio.me. Gosto de projetos que unem
+          o técnico ao criativo — como <em>visão computacional</em>, <em>controle por gestos</em> e <em>sistemas web</em>.
+        </p>
+        <p>
+          Fora do código, atuo há <strong>mais de um ano como barmen</strong> e tenho experiência em <em>diversas áreas</em> — de marcenaria
+          a cozinha e atendimento. Cada uma delas me ensinou algo sobre resolver problemas sob pressão e trabalhar em equipe.
+        </p>
+      </div>
+
+      <aside class="info-card">
+        <h4>// Informações</h4>
+        <div class="info-row"><span class="k">nome</span> <span class="v">Carlos A. E. L. Rodero</span></div>
+        <div class="info-row"><span class="k">idade</span> <span class="v">22 anos</span></div>
+        <div class="info-row"><span class="k">local</span> <span class="v">Votuporanga, SP</span></div>
+        <div class="info-row"><span class="k">email</span> <span class="v"><a href="mailto:gutorodero227@gmail.com">gutorodero227@gmail.com</a></span></div>
+        <div class="info-row"><span class="k">telefone</span> <span class="v">(17) 99205-6479</span></div>
+        <div class="info-row"><span class="k">github</span> <span class="v"><a href="https://github.com/GutoRodero" target="_blank">@GutoRodero</a></span></div>
+        <div class="info-row"><span class="k">inglês</span> <span class="v">B2 · intermediário</span></div>
+        <div class="info-row"><span class="k">experiência</span> <span class="v">3 anos Full Stack</span></div>
+        <div class="info-row"><span class="k">status</span> <span class="v" style="color:var(--accent)">● disponível</span></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section>
+  <div class="container">
+    <div class="section-label">02 — tecnologias</div>
+    <h2 class="section-title">Stack <span class="muted">técnica.</span></h2>
+
+    <div class="skills-grid">
+      <div class="skill"><div class="skill-icon" style="background:#f89820">J</div><span class="skill-name">Java</span></div>
+      <div class="skill"><div class="skill-icon" style="background:#659ad2">C++</div><span class="skill-name">C++</span></div>
+      <div class="skill"><div class="skill-icon" style="background:#3776ab">Py</div><span class="skill-name">Python</span></div>
+      <div class="skill"><div class="skill-icon" style="background:#02569b">Fl</div><span class="skill-name">Flutter</span></div>
+      <div class="skill"><div class="skill-icon" style="background:#e34f26">H5</div><span class="skill-name">HTML5</span></div>
+      <div class="skill"><div class="skill-icon" style="background:#264de4">C3</div><span class="skill-name">CSS3</span></div>
+      <div class="skill"><div class="skill-icon" style="background:#f7df1e; color:#000">JS</div><span class="skill-name">JavaScript</span></div>
+      <div class="skill"><div class="skill-icon" style="background:#777bb4">Ph</div><span class="skill-name">PHP</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Formação & Experiência -->
+<section id="formacao">
+  <div class="container">
+    <div class="section-label">03 — trajetória</div>
+    <h2 class="section-title">Formação <span class="muted">& experiência.</span></h2>
+
+    <div class="two-col">
+      <div>
+        <h3 class="subsection-title">Formação Acadêmica</h3>
+        <div class="timeline">
+          <div class="timeline-item done">
+            <div class="timeline-date">CONCLUÍDO</div>
+            <div class="timeline-title">Bacharelado em Sistemas de Informação</div>
+            <div class="timeline-org">Instituto Federal</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">CURSADO</div>
+            <div class="timeline-title">Bacharelado em Ciências de Dados</div>
+            <div class="timeline-org">UNIVESP</div>
+            <div class="timeline-desc">Universidade Virtual do Estado de São Paulo</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">CONCLUÍDO</div>
+            <div class="timeline-title">Técnico em Informática</div>
+            <div class="timeline-org">SENAC Votuporanga</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">CONCLUÍDO</div>
+            <div class="timeline-title">Assistente de Tecnologia da Informação</div>
+            <div class="timeline-org">SENAC Votuporanga</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">CONCLUÍDO</div>
+            <div class="timeline-title">Montador e Reparador de Computadores</div>
+            <div class="timeline-org">SENAC Votuporanga</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">CONCLUÍDO</div>
+            <div class="timeline-title">Curso de Redes</div>
+            <div class="timeline-org">SENAC Votuporanga</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">CONCLUÍDO</div>
+            <div class="timeline-title">Lógica de Programação Essencial</div>
+            <div class="timeline-org">Dio.me</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">CONCLUÍDO</div>
+            <div class="timeline-title">Introdução à Qualidade de Software</div>
+            <div class="timeline-org">Dio.me</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">CONCLUÍDO</div>
+            <div class="timeline-title">Fundamentos de Orientação a Objetos</div>
+            <div class="timeline-org">Dio.me</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">CONCLUÍDO</div>
+            <div class="timeline-title">Ensino Médio</div>
+            <div class="timeline-org">E.E. Prof. Cícero Barbosa Lima Júnior</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="subsection-title">Experiência Profissional</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">1+ ANO · ATUAL</div>
+            <div class="timeline-title">Barmen</div>
+            <div class="timeline-org">Tulum Drinks</div>
+            <div class="timeline-desc">Atendimento, preparo de drinks e gestão do bar em ambiente de alto volume.</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">2 ANOS 4 MESES</div>
+            <div class="timeline-title">Desenvolvedor Full Stack</div>
+            <div class="timeline-org">NKN Digital</div>
+            <div class="timeline-desc">Desenvolvimento web e sistemas — backend, frontend e integração com bancos de dados.</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">4 MESES</div>
+            <div class="timeline-title">Estágio em Desenvolvimento</div>
+            <div class="timeline-org">NKN Digital</div>
+            <div class="timeline-desc">Primeiros passos no desenvolvimento profissional, aprendendo o fluxo de trabalho da empresa.</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">5 MESES</div>
+            <div class="timeline-title">Ajudante de Marceneiro</div>
+            <div class="timeline-org">—</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">2 MESES</div>
+            <div class="timeline-title">Atendimento</div>
+            <div class="timeline-org">Kaii Poke</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">2 MESES</div>
+            <div class="timeline-title">Chapeiro</div>
+            <div class="timeline-org">Vaca Loka</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">1 MÊS</div>
+            <div class="timeline-title">Auxiliar de Cozinha</div>
+            <div class="timeline-org">Zahtari Esfirraria</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">1 MÊS</div>
+            <div class="timeline-title">Ajudante de Cozinha</div>
+            <div class="timeline-org">Fogo no Braseiro</div>
+          </div>
+          <div class="timeline-item done">
+            <div class="timeline-date">TREINAMENTO</div>
+            <div class="timeline-title">Petshop — Banho e Tosa</div>
+            <div class="timeline-org">—</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projetos em destaque -->
+<section id="projetos-destaque">
+  <div class="container">
+    <div class="section-label">04 — trabalho recente</div>
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:20px; margin-bottom:48px">
+      <h2 class="section-title" style="margin:0">Projetos em <span class="muted">destaque.</span></h2>
+      <a href="projetos.html" class="btn btn-ghost" style="padding:10px 18px">
+        Ver todos
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Air Drawing -->
+      <a class="project-card" href="https://github.com/GutoRodero/air_drawing" target="_blank" rel="noopener">
+        <span class="project-status github">GitHub</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #1a2b3d 0%, #0a1424 100%)">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+            <circle cx="60" cy="60" r="42" stroke="#4dd0b0" stroke-width="1.5" opacity="0.3"/>
+            <path d="M25 90 Q40 40, 60 55 T95 30" stroke="#4dd0b0" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <circle cx="95" cy="30" r="6" fill="#4dd0b0"/>
+            <circle cx="95" cy="30" r="12" fill="#4dd0b0" opacity="0.2"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">visão computacional</div>
+          <div class="project-title">Air Drawing</div>
+          <p class="project-desc">Aplicação em Python que permite desenhar no ar usando apenas a webcam, com detecção de gestos e rastreamento em tempo real.</p>
+          <div class="project-stack">
+            <span class="stack-chip">Python</span>
+            <span class="stack-chip">OpenCV</span>
+            <span class="stack-chip">MediaPipe</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Gesture Control -->
+      <a class="project-card" href="https://github.com/GutoRodero/Gesture_Control" target="_blank" rel="noopener">
+        <span class="project-status github">GitHub</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #2b1a3d 0%, #100a24 100%)">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+            <g transform="translate(60 60)">
+              <rect x="-25" y="-25" width="50" height="50" stroke="#b794f6" stroke-width="1.5" fill="none" transform="rotate(15)"/>
+              <rect x="-25" y="-25" width="50" height="50" stroke="#b794f6" stroke-width="1.5" fill="none" transform="rotate(35)" opacity="0.6"/>
+              <rect x="-25" y="-25" width="50" height="50" stroke="#b794f6" stroke-width="1.5" fill="none" transform="rotate(55)" opacity="0.3"/>
+            </g>
+            <circle cx="30" cy="90" r="5" fill="#b794f6"/>
+            <circle cx="90" cy="90" r="5" fill="#b794f6"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">visão computacional · 3D</div>
+          <div class="project-title">Gesture Control</div>
+          <p class="project-desc">Projeto para manipular formas 3D em tempo real usando gestos capturados pela webcam. Interação natural com objetos virtuais.</p>
+          <div class="project-stack">
+            <span class="stack-chip">Python</span>
+            <span class="stack-chip">MediaPipe</span>
+            <span class="stack-chip">OpenGL</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- TaskFlow (NOVO) -->
+      <a class="project-card" href="projetos/taskflow.html">
+        <span class="project-status new">Novo</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #1a3d2b 0%, #0a2418 100%)">
+          <svg width="180" height="120" viewBox="0 0 180 120" fill="none">
+            <rect x="20" y="20" width="45" height="80" rx="4" fill="#0f141c" stroke="#4dd0b0" stroke-width="1"/>
+            <rect x="26" y="28" width="33" height="8" rx="2" fill="#4dd0b0" opacity="0.3"/>
+            <rect x="26" y="42" width="33" height="16" rx="2" fill="#253044"/>
+            <rect x="26" y="64" width="33" height="16" rx="2" fill="#253044"/>
+
+            <rect x="70" y="20" width="45" height="80" rx="4" fill="#0f141c" stroke="#4dd0b0" stroke-width="1"/>
+            <rect x="76" y="28" width="33" height="8" rx="2" fill="#ffb347" opacity="0.3"/>
+            <rect x="76" y="42" width="33" height="24" rx="2" fill="#253044"/>
+
+            <rect x="120" y="20" width="45" height="80" rx="4" fill="#0f141c" stroke="#4dd0b0" stroke-width="1"/>
+            <rect x="126" y="28" width="33" height="8" rx="2" fill="#6ea8ff" opacity="0.3"/>
+            <rect x="126" y="42" width="33" height="16" rx="2" fill="#253044"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">full stack · saas</div>
+          <div class="project-title">TaskFlow</div>
+          <p class="project-desc">Sistema completo de gestão de tarefas estilo Kanban, com autenticação JWT, tempo real e colaboração em equipes.</p>
+          <div class="project-stack">
+            <span class="stack-chip">React</span>
+            <span class="stack-chip">Node.js</span>
+            <span class="stack-chip">PostgreSQL</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- PetCare (NOVO) -->
+      <a class="project-card" href="projetos/petcare.html">
+        <span class="project-status new">Novo</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #3d2b1a 0%, #241810 100%)">
+          <svg width="140" height="120" viewBox="0 0 140 120" fill="none">
+            <!-- pata -->
+            <ellipse cx="70" cy="80" rx="18" ry="14" fill="#ffb347"/>
+            <ellipse cx="48" cy="55" rx="8" ry="10" fill="#ffb347"/>
+            <ellipse cx="62" cy="42" rx="8" ry="10" fill="#ffb347"/>
+            <ellipse cx="78" cy="42" rx="8" ry="10" fill="#ffb347"/>
+            <ellipse cx="92" cy="55" rx="8" ry="10" fill="#ffb347"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">mobile · flutter</div>
+          <div class="project-title">PetCare Manager</div>
+          <p class="project-desc">Aplicativo Flutter para petshops gerenciarem agenda de banho e tosa, cadastro de clientes e prontuário dos pets.</p>
+          <div class="project-stack">
+            <span class="stack-chip">Flutter</span>
+            <span class="stack-chip">Dart</span>
+            <span class="stack-chip">Firebase</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- BarPOS (NOVO) -->
+      <a class="project-card" href="projetos/barpos.html">
+        <span class="project-status new">Novo</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #3d1a2b 0%, #241018 100%)">
+          <svg width="140" height="120" viewBox="0 0 140 120" fill="none">
+            <!-- copo/drink -->
+            <path d="M50 30 L90 30 L82 90 L58 90 Z" fill="none" stroke="#f56ba0" stroke-width="2"/>
+            <path d="M52 45 L88 45 L83 80 L57 80 Z" fill="#f56ba0" opacity="0.3"/>
+            <line x1="70" y1="30" x2="70" y2="18" stroke="#f56ba0" stroke-width="2"/>
+            <circle cx="70" cy="15" r="4" fill="#f56ba0"/>
+            <rect x="55" y="95" width="30" height="4" rx="2" fill="#f56ba0"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">pos · gestão</div>
+          <div class="project-title">BarPOS</div>
+          <p class="project-desc">Sistema de PDV para bares e restaurantes com controle de comandas, mesas, estoque e relatórios de vendas em tempo real.</p>
+          <div class="project-stack">
+            <span class="stack-chip">PHP</span>
+            <span class="stack-chip">Laravel</span>
+            <span class="stack-chip">MySQL</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Guerreiro Offline -->
+      <a class="project-card" href="https://github.com/GutoRodero/GuerreiroOffline" target="_blank" rel="noopener">
+        <span class="project-status github">GitHub</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #3d2b0a 0%, #241a05 100%)">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+            <rect x="30" y="35" width="60" height="55" rx="4" fill="#0f141c" stroke="#ffb347" stroke-width="1.5"/>
+            <rect x="35" y="42" width="50" height="14" fill="#ffb347" opacity="0.2"/>
+            <text x="60" y="53" font-family="monospace" font-size="10" fill="#ffb347" text-anchor="middle">R$ 245,00</text>
+            <circle cx="45" cy="70" r="5" fill="#ffb347" opacity="0.4"/>
+            <circle cx="60" cy="70" r="5" fill="#ffb347" opacity="0.4"/>
+            <circle cx="75" cy="70" r="5" fill="#ffb347" opacity="0.4"/>
+            <rect x="35" y="80" width="50" height="6" rx="2" fill="#ffb347" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">php · caixa</div>
+          <div class="project-title">Guerreiro Offline</div>
+          <p class="project-desc">Sistema de caixa desenvolvido em PHP para treino e futura utilização. Uma das primeiras aplicações completas do meu portfólio.</p>
+          <div class="project-stack">
+            <span class="stack-chip">PHP</span>
+            <span class="stack-chip">MySQL</span>
+            <span class="stack-chip">HTML5</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contato">
+  <div class="container">
+    <div class="section-label" style="justify-content:center">05 — vamos conversar</div>
+    <h2>Vamos construir <br>algo juntos.</h2>
+    <p>Aberto a novas oportunidades em desenvolvimento Full Stack, Júnior ou colaborações em projetos interessantes.</p>
+    <div class="contact-links">
+      <a class="btn btn-primary" href="mailto:gutorodero227@gmail.com">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        gutorodero227@gmail.com
+      </a>
+      <a class="btn btn-ghost" href="https://github.com/GutoRodero" target="_blank">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        github.com/GutoRodero
+      </a>
+      <a class="btn btn-ghost" href="tel:+5517992056479">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (17) 99205-6479
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div>© 2026 Carlos Augusto E. L. Rodero. Feito com ♥ e muito café.</div>
+    <div>&lt; construído com HTML, CSS &amp; JS puro /&gt;</div>
+  </div>
+</footer>
+
+<script>
+// Reveal on scroll
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reveal, .project-card, .timeline-item, .skill').forEach(el => {
+  el.classList.add('reveal');
+  io.observe(el);
+});
+
+// Active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    const top = s.offsetTop - 100;
+    if (window.scrollY >= top) current = s.id;
+  });
+  navLinks.forEach(l => {
+    l.classList.toggle('active', l.getAttribute('href') === '#' + current);
+  });
+});
+</script>
+
+</body>
+</html>

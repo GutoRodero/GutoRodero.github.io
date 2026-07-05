@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BarPOS — Carlos Rodero</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/project-page.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👨‍💻%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand"><span class="brand-dot"></span><span>carlos.rodero</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html#sobre">sobre</a></li>
+      <li><a href="../index.html#formacao">formação</a></li>
+      <li><a href="../projetos.html" class="active">projetos</a></li>
+      <li><a href="../index.html#contato">contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="project-hero">
+  <div class="container">
+    <a href="../projetos.html" class="back-link">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      voltar para projetos
+    </a>
+    <div class="project-meta">
+      <span>POS · Gestão</span>
+      <span>2026</span>
+      <span>Em desenvolvimento</span>
+    </div>
+    <h1>BarPOS.</h1>
+    <p class="tagline">Sistema de PDV (Ponto de Venda) para bares e restaurantes com controle de comandas, mesas, estoque e relatórios em tempo real.</p>
+    <div class="tech-badges">
+      <span class="tech-badge primary">Laravel</span>
+      <span class="tech-badge primary">MySQL</span>
+      <span class="tech-badge primary">Alpine.js</span>
+      <span class="tech-badge">PHP 8</span>
+      <span class="tech-badge">Tailwind</span>
+      <span class="tech-badge">Livewire</span>
+    </div>
+    <div style="margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap;">
+      <a class="btn btn-primary" href="https://github.com/GutoRodero/barpos" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        Ver código no GitHub
+      </a>
+    </div>
+  </div>
+</header>
+
+<section style="padding: 20px 0 0">
+  <div class="container">
+    <div class="mockup">
+      <div class="mockup-title">// preview</div>
+      <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px;">
+        <div style="background: var(--bg-0); border-radius: 12px; padding: 20px; border: 1px solid var(--border);">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+            <h4 style="font-size: 16px; color: var(--text-0);">Mesas — Salão</h4>
+            <span style="font-family: var(--font-mono); font-size: 12px; color: var(--accent);">5 ocupadas · 5 livres</span>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;">
+            <div style="aspect-ratio: 1; background: linear-gradient(135deg, #f56ba0, #ff5f56); border-radius: 8px; display: grid; place-items: center; color: white; font-family: var(--font-mono); font-weight: 700; font-size: 14px;">01</div>
+            <div style="aspect-ratio: 1; background: linear-gradient(135deg, #f56ba0, #ff5f56); border-radius: 8px; display: grid; place-items: center; color: white; font-family: var(--font-mono); font-weight: 700; font-size: 14px;">02</div>
+            <div style="aspect-ratio: 1; background: var(--bg-2); border-radius: 8px; display: grid; place-items: center; color: var(--text-2); font-family: var(--font-mono); font-weight: 700; font-size: 14px;">03</div>
+            <div style="aspect-ratio: 1; background: linear-gradient(135deg, #f56ba0, #ff5f56); border-radius: 8px; display: grid; place-items: center; color: white; font-family: var(--font-mono); font-weight: 700; font-size: 14px;">04</div>
+            <div style="aspect-ratio: 1; background: var(--bg-2); border-radius: 8px; display: grid; place-items: center; color: var(--text-2); font-family: var(--font-mono); font-weight: 700; font-size: 14px;">05</div>
+            <div style="aspect-ratio: 1; background: var(--bg-2); border-radius: 8px; display: grid; place-items: center; color: var(--text-2); font-family: var(--font-mono); font-weight: 700; font-size: 14px;">06</div>
+            <div style="aspect-ratio: 1; background: linear-gradient(135deg, #f56ba0, #ff5f56); border-radius: 8px; display: grid; place-items: center; color: white; font-family: var(--font-mono); font-weight: 700; font-size: 14px;">07</div>
+            <div style="aspect-ratio: 1; background: var(--bg-2); border-radius: 8px; display: grid; place-items: center; color: var(--text-2); font-family: var(--font-mono); font-weight: 700; font-size: 14px;">08</div>
+            <div style="aspect-ratio: 1; background: linear-gradient(135deg, #f56ba0, #ff5f56); border-radius: 8px; display: grid; place-items: center; color: white; font-family: var(--font-mono); font-weight: 700; font-size: 14px;">09</div>
+            <div style="aspect-ratio: 1; background: var(--bg-2); border-radius: 8px; display: grid; place-items: center; color: var(--text-2); font-family: var(--font-mono); font-weight: 700; font-size: 14px;">10</div>
+          </div>
+        </div>
+        <div style="background: var(--bg-0); border-radius: 12px; padding: 20px; border: 1px solid var(--border);">
+          <h4 style="font-size: 14px; color: var(--text-0); margin-bottom: 16px;">Comanda #04</h4>
+          <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-2); margin-bottom: 6px;">Chopp Pilsen</div>
+          <div style="display:flex; justify-content:space-between; margin-bottom: 12px;"><span style="color: var(--text-1); font-size: 13px;">3 un.</span><span style="color: var(--text-0); font-family: var(--font-mono);">R$ 45,00</span></div>
+          <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-2); margin-bottom: 6px;">Porção fritas</div>
+          <div style="display:flex; justify-content:space-between; margin-bottom: 12px;"><span style="color: var(--text-1); font-size: 13px;">1 un.</span><span style="color: var(--text-0); font-family: var(--font-mono);">R$ 28,00</span></div>
+          <div style="font-family: var(--font-mono); font-size: 12px; color: var(--text-2); margin-bottom: 6px;">Caipirinha</div>
+          <div style="display:flex; justify-content:space-between; margin-bottom: 16px;"><span style="color: var(--text-1); font-size: 13px;">2 un.</span><span style="color: var(--text-0); font-family: var(--font-mono);">R$ 36,00</span></div>
+          <div style="border-top: 1px dashed var(--border); padding-top: 14px;">
+            <div style="display:flex; justify-content:space-between; align-items: baseline;">
+              <span style="color: var(--text-2); font-size: 13px;">TOTAL</span>
+              <span style="color: var(--accent); font-family: var(--font-mono); font-size: 22px; font-weight: 700;">R$ 109,00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <div class="content-main">
+        <h2>O problema</h2>
+        <p>Estabelecimentos usam sistemas caros, complicados ou desatualizados. Bares e pequenos restaurantes precisam de algo <strong>simples, rápido</strong> e que rode até no navegador de um tablet — sem instalar software.</p>
+
+        <h2>A solução</h2>
+        <p>Sistema web full-stack em <strong>Laravel 11 + MySQL</strong>, com interface reativa via <code>Livewire</code> e <code>Alpine.js</code>. Multi-usuário (garçom, caixa, gerente) com permissões, impressão térmica de comandas ESC/POS e relatórios em tempo real.</p>
+
+        <p style="background: var(--bg-2); padding: 16px 20px; border-radius: 8px; border-left: 3px solid var(--accent);">💡 <strong>Curiosidade:</strong> trabalhei 9 meses como barmen no Tulum Drinks e passei por outros bares e restaurantes. Sei exatamente as dores desse setor.</p>
+
+        <h2>Features principais</h2>
+        <div class="features">
+          <div class="feature"><div class="feature-icon">🍺</div><h4>Comandas por mesa</h4><p>Vincule pedidos a mesas e transfira produtos entre comandas.</p></div>
+          <div class="feature"><div class="feature-icon">🖨️</div><h4>Impressão térmica</h4><p>Envio automático de pedidos para bar e cozinha via ESC/POS.</p></div>
+          <div class="feature"><div class="feature-icon">📦</div><h4>Controle de estoque</h4><p>Baixa automática ao vender, alerta de estoque mínimo, entradas.</p></div>
+          <div class="feature"><div class="feature-icon">👥</div><h4>Multiusuário</h4><p>Papéis: garçom, caixa, gerente. Cada um vê o que precisa.</p></div>
+          <div class="feature"><div class="feature-icon">📈</div><h4>DRE em tempo real</h4><p>Vendas por hora, produtos mais vendidos, comissão por garçom.</p></div>
+          <div class="feature"><div class="feature-icon">💳</div><h4>Fechamento flexível</h4><p>Divisão de conta, múltiplos métodos de pagamento, taxa de serviço.</p></div>
+        </div>
+
+        <h2>O que aprendi</h2>
+        <p>Aprofundei o conhecimento em <strong>Laravel</strong> — <code>Eloquent</code>, <code>Policies</code>, <code>Broadcasting</code> — e explorei o <em>Livewire</em> como alternativa ao SPA. O maior desafio foi lidar com concorrência: dois garçons não podem "levar" a mesma comanda ao mesmo tempo.</p>
+      </div>
+
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <h4>// detalhes</h4>
+          <div class="sidebar-row"><span class="k">Categoria</span><span class="v">POS · Gestão</span></div>
+          <div class="sidebar-row"><span class="k">Ano</span><span class="v">2026</span></div>
+          <div class="sidebar-row"><span class="k">Status</span><span class="v">Em desenvolvimento</span></div>
+          <div class="sidebar-row"><span class="k">Papel</span><span class="v">Full Stack</span></div>
+          <div class="sidebar-row"><span class="k">Time</span><span class="v">Solo</span></div>
+        </div>
+        <div class="sidebar-card">
+          <h4>// stack</h4>
+          <div class="sidebar-row"><span class="v">PHP 8.3</span></div>
+          <div class="sidebar-row"><span class="v">Laravel 11</span></div>
+          <div class="sidebar-row"><span class="v">MySQL 8</span></div>
+          <div class="sidebar-row"><span class="v">Livewire 3</span></div>
+          <div class="sidebar-row"><span class="v">Alpine.js + Tailwind</span></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="next-project">
+  <div class="container">
+    <div class="np-inner">
+      <div>
+        <div class="np-label">// próximo projeto</div>
+        <a href="snippet-vault.html" class="np-name">CodeSnippet Vault →</a>
+      </div>
+      <a href="../projetos.html" class="btn btn-ghost">Ver todos</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div>© 2026 Carlos Augusto E. L. Rodero.</div>
+    <div>&lt; feito com HTML, CSS &amp; JS puro /&gt;</div>
+  </div>
+</footer>
+
+</body>
+</html>

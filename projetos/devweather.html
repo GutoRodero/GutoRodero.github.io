@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevWeather — Carlos Rodero</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/project-page.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👨‍💻%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand"><span class="brand-dot"></span><span>carlos.rodero</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html#sobre">sobre</a></li>
+      <li><a href="../index.html#formacao">formação</a></li>
+      <li><a href="../projetos.html" class="active">projetos</a></li>
+      <li><a href="../index.html#contato">contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="project-hero">
+  <div class="container">
+    <a href="../projetos.html" class="back-link">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      voltar para projetos
+    </a>
+    <div class="project-meta">
+      <span>API · Terminal UI</span>
+      <span>2026</span>
+      <span>Beta</span>
+    </div>
+    <h1>DevWeather.</h1>
+    <p class="tagline">Dashboard de clima com estética de terminal — para quem prefere consultar previsão do tempo sem sair do modo hacker.</p>
+    <div class="tech-badges">
+      <span class="tech-badge primary">JavaScript</span>
+      <span class="tech-badge primary">API REST</span>
+      <span class="tech-badge primary">Canvas</span>
+      <span class="tech-badge">OpenWeather</span>
+      <span class="tech-badge">CSS3</span>
+    </div>
+    <div style="margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap;">
+      <a class="btn btn-primary" href="https://github.com/GutoRodero/devweather" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        Ver código no GitHub
+      </a>
+    </div>
+  </div>
+</header>
+
+<section style="padding: 20px 0 0">
+  <div class="container">
+    <div class="mockup">
+      <div class="mockup-title">// preview</div>
+      <div style="background: #0a0e14; border-radius: 12px; padding: 24px; border: 1px solid var(--border); font-family: var(--font-mono); font-size: 13px; overflow-x: auto;">
+        <div style="color: var(--accent); margin-bottom: 8px;">$ weather --city="Votuporanga, SP"</div>
+        <div style="color: var(--text-2); margin-bottom: 16px;">&gt; fetching from OpenWeatherMap API…</div>
+        <div style="color: var(--text-0); margin-bottom: 4px;">╔═══════════════════════════════════════════╗</div>
+        <div style="color: var(--text-0); margin-bottom: 4px;">║  <span style="color: var(--accent);">Votuporanga, SP</span>              <span style="color: var(--warning);">☀ 28°C</span>     ║</div>
+        <div style="color: var(--text-0); margin-bottom: 4px;">║  Sensação: 31°C · Umidade: 62%           ║</div>
+        <div style="color: var(--text-0); margin-bottom: 4px;">╚═══════════════════════════════════════════╝</div>
+        <div style="color: var(--secondary); margin-top: 16px; margin-bottom: 6px;">┌── Próximas 24h ──────────────────────────┐</div>
+        <div style="color: var(--text-1); margin-bottom: 3px;">│ 12h  <span style="color: var(--warning);">☀</span>  30°  ▁▂▃▅▇▇▇▇▆▅▃▂ chuva 5%       │</div>
+        <div style="color: var(--text-1); margin-bottom: 3px;">│ 15h  <span style="color: var(--warning);">☀</span>  32°  ▁▂▃▅▇▇▇▇▆▅▃▂ chuva 10%      │</div>
+        <div style="color: var(--text-1); margin-bottom: 3px;">│ 18h  <span style="color: var(--secondary);">⛅</span>  27°  ▁▂▃▅▇▇▇▇▆▅▃▂ chuva 30%      │</div>
+        <div style="color: var(--text-1); margin-bottom: 3px;">│ 21h  <span style="color: var(--purple);">☾</span>  22°  ▁▂▃▅▇▇▇▇▆▅▃▂ chuva 20%      │</div>
+        <div style="color: var(--secondary); margin-bottom: 16px;">└──────────────────────────────────────────┘</div>
+        <div style="color: var(--accent);">$ <span style="border-right: 2px solid; animation: blink 1s steps(2) infinite; padding-right: 2px;">&nbsp;</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <div class="content-main">
+        <h2>O problema</h2>
+        <p>Aplicativos de clima são cheios de anúncios, popups e informações irrelevantes. Devs preferem interfaces limpas — nada mais limpo que um terminal.</p>
+
+        <h2>A solução</h2>
+        <p>Uma dashboard/CLI web que consome a <strong>OpenWeather API</strong> e apresenta os dados em formato ASCII art. Suporta comandos estilo Unix (<code>weather</code>, <code>forecast</code>, <code>help</code>, <code>cities</code>). Salva favoritos localmente e usa gráficos em SVG para tendências.</p>
+
+        <h2>Features principais</h2>
+        <div class="features">
+          <div class="feature"><div class="feature-icon">⌨️</div><h4>CLI real</h4><p>Comandos como weather, forecast, help — parseados como um shell.</p></div>
+          <div class="feature"><div class="feature-icon">📈</div><h4>Gráficos ASCII</h4><p>Tendências de temperatura e chuva em ASCII art, direto no terminal.</p></div>
+          <div class="feature"><div class="feature-icon">⭐</div><h4>Favoritos</h4><p>Salve suas cidades preferidas para acesso rápido.</p></div>
+          <div class="feature"><div class="feature-icon">🌐</div><h4>Multi-linguagem</h4><p>Português e inglês. Comandos aceitam ambas as línguas.</p></div>
+          <div class="feature"><div class="feature-icon">📴</div><h4>Cache offline</h4><p>Última consulta fica salva mesmo sem internet.</p></div>
+          <div class="feature"><div class="feature-icon">🎨</div><h4>Temas ANSI</h4><p>Solarized, Dracula, Nord, Monokai — pick your poison.</p></div>
+        </div>
+
+        <h2>O que aprendi</h2>
+        <p>Escrever um <em>parser de comandos</em> foi um exercício divertido de expressões regulares e árvore de estados. Aprendi também a lidar com <strong>rate limits</strong> de APIs públicas, cache com <em>service workers</em> e como fazer arte ASCII programaticamente.</p>
+      </div>
+
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <h4>// detalhes</h4>
+          <div class="sidebar-row"><span class="k">Categoria</span><span class="v">API · Terminal UI</span></div>
+          <div class="sidebar-row"><span class="k">Ano</span><span class="v">2026</span></div>
+          <div class="sidebar-row"><span class="k">Status</span><span class="v">Beta</span></div>
+          <div class="sidebar-row"><span class="k">Papel</span><span class="v">Solo Developer</span></div>
+        </div>
+        <div class="sidebar-card">
+          <h4>// stack</h4>
+          <div class="sidebar-row"><span class="v">JavaScript ES2023</span></div>
+          <div class="sidebar-row"><span class="v">OpenWeather API</span></div>
+          <div class="sidebar-row"><span class="v">CSS3 puro</span></div>
+          <div class="sidebar-row"><span class="v">Canvas API</span></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="next-project">
+  <div class="container">
+    <div class="np-inner">
+      <div>
+        <div class="np-label">// próximo projeto</div>
+        <a href="qr-menu.html" class="np-name">QR Menu Digital →</a>
+      </div>
+      <a href="../projetos.html" class="btn btn-ghost">Ver todos</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div>© 2026 Carlos Augusto E. L. Rodero.</div>
+    <div>&lt; feito com HTML, CSS &amp; JS puro /&gt;</div>
+  </div>
+</footer>
+
+</body>
+</html>

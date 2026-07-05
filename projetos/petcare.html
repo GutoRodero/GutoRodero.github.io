@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetCare Manager — Carlos Rodero</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/project-page.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👨‍💻%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand"><span class="brand-dot"></span><span>carlos.rodero</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html#sobre">sobre</a></li>
+      <li><a href="../index.html#formacao">formação</a></li>
+      <li><a href="../projetos.html" class="active">projetos</a></li>
+      <li><a href="../index.html#contato">contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="project-hero">
+  <div class="container">
+    <a href="../projetos.html" class="back-link">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      voltar para projetos
+    </a>
+    <div class="project-meta">
+      <span>Mobile · Flutter</span>
+      <span>2026</span>
+      <span>Em desenvolvimento</span>
+    </div>
+    <h1>PetCare Manager.</h1>
+    <p class="tagline">Aplicativo mobile em Flutter para petshops gerenciarem serviços de banho, tosa e agenda — feito com base na minha experiência real na área.</p>
+    <div class="tech-badges">
+      <span class="tech-badge primary">Flutter</span>
+      <span class="tech-badge primary">Firebase</span>
+      <span class="tech-badge primary">Dart</span>
+      <span class="tech-badge">Firestore</span>
+      <span class="tech-badge">Cloud Functions</span>
+      <span class="tech-badge">FCM</span>
+    </div>
+    <div style="margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap;">
+      <a class="btn btn-primary" href="https://github.com/GutoRodero/petcare-manager" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        Ver código no GitHub
+      </a>
+    </div>
+  </div>
+</header>
+
+<section style="padding: 20px 0 0">
+  <div class="container">
+    <div class="mockup">
+      <div class="mockup-title">// preview</div>
+      <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+        <div style="width: 240px; background: var(--bg-0); border: 8px solid #1c2432; border-radius: 32px; padding: 20px 16px; box-shadow: 0 30px 80px rgba(0,0,0,0.5);">
+          <div style="font-family: var(--font-mono); font-size: 10px; color: var(--text-2); margin-bottom: 8px; text-align: center;">09:41</div>
+          <div style="color: var(--accent); font-size: 12px; margin-bottom: 4px;">Bem-vindo, Carlos!</div>
+          <h4 style="font-size: 20px; margin-bottom: 20px; color: var(--text-0);">Agenda de hoje</h4>
+          <div style="background: linear-gradient(135deg, #ffb347, #f56ba0); padding: 14px; border-radius: 12px; margin-bottom: 10px;">
+            <div style="font-size: 11px; opacity: 0.9; color: white;">10:30 — BANHO + TOSA</div>
+            <div style="font-weight: 600; color: white; margin-top: 4px;">Bela (Golden)</div>
+          </div>
+          <div style="background: var(--bg-2); padding: 14px; border-radius: 12px; margin-bottom: 10px;">
+            <div style="font-size: 11px; color: var(--text-2);">14:00 — BANHO</div>
+            <div style="font-weight: 600; color: var(--text-0); margin-top: 4px;">Simba (Persa)</div>
+          </div>
+          <div style="background: var(--bg-2); padding: 14px; border-radius: 12px;">
+            <div style="font-size: 11px; color: var(--text-2);">16:30 — TOSA HIGIÊNICA</div>
+            <div style="font-weight: 600; color: var(--text-0); margin-top: 4px;">Thor (Pinscher)</div>
+          </div>
+        </div>
+        <div style="width: 240px; background: var(--bg-0); border: 8px solid #1c2432; border-radius: 32px; padding: 20px 16px; box-shadow: 0 30px 80px rgba(0,0,0,0.5);">
+          <div style="font-family: var(--font-mono); font-size: 10px; color: var(--text-2); margin-bottom: 8px; text-align: center;">09:41</div>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+            <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #ffb347, #f56ba0);"></div>
+            <div>
+              <h4 style="font-size: 18px; color: var(--text-0);">Bela</h4>
+              <div style="font-size: 12px; color: var(--text-2);">Golden · 3 anos</div>
+            </div>
+          </div>
+          <div style="background: var(--bg-2); padding: 12px; border-radius: 10px; margin-bottom: 8px;">
+            <div style="font-size: 11px; color: var(--text-2); margin-bottom: 4px;">ÚLTIMO BANHO</div>
+            <div style="font-size: 14px; color: var(--text-0);">há 12 dias</div>
+          </div>
+          <div style="background: var(--bg-2); padding: 12px; border-radius: 10px; margin-bottom: 8px;">
+            <div style="font-size: 11px; color: var(--text-2); margin-bottom: 4px;">VACINAS</div>
+            <div style="font-size: 14px; color: var(--accent);">✓ Em dia</div>
+          </div>
+          <button style="width: 100%; padding: 12px; background: var(--accent); color: var(--bg-0); border: none; border-radius: 10px; font-weight: 600; margin-top: 12px; font-family: inherit;">Agendar serviço</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="content-grid">
+      <div class="content-main">
+        <h2>O problema</h2>
+        <p>Petshops pequenos ainda dependem de agendas de papel e planilhas Excel para gerenciar clientes, pets e serviços — um caos quando o volume cresce. Cliente esquece o compromisso, tosador perde o histórico do animal.</p>
+
+        <h2>A solução</h2>
+        <p>Uma aplicação mobile <strong>Flutter multi-plataforma</strong> (iOS + Android) que centraliza tudo: cadastro de pets, histórico de serviços, agenda diária/semanal, notificações e relatórios. Backend serverless com Firebase, para escalar sem preocupação de infraestrutura.</p>
+
+        <p style="background: var(--bg-2); padding: 16px 20px; border-radius: 8px; border-left: 3px solid var(--accent);">💡 <strong>Curiosidade:</strong> tenho treinamento prático em Petshop/Banho e Tosa, então conheço as dores desse mercado de perto.</p>
+
+        <h2>Features principais</h2>
+        <div class="features">
+          <div class="feature"><div class="feature-icon">📅</div><h4>Agenda inteligente</h4><p>Visualização diária, semanal e mensal com drag-to-reschedule.</p></div>
+          <div class="feature"><div class="feature-icon">🐕</div><h4>Prontuário do pet</h4><p>Histórico completo de banhos, tosas, vacinas e observações.</p></div>
+          <div class="feature"><div class="feature-icon">🔔</div><h4>Notificações push</h4><p>Lembrete de agendamentos para o cliente e o pet shop.</p></div>
+          <div class="feature"><div class="feature-icon">📸</div><h4>Fotos antes/depois</h4><p>Registro visual do serviço, com galeria por pet.</p></div>
+          <div class="feature"><div class="feature-icon">💰</div><h4>Controle financeiro</h4><p>Registro de pagamentos, comissão de tosadores e caixa diário.</p></div>
+          <div class="feature"><div class="feature-icon">📊</div><h4>Relatórios</h4><p>Serviços mais vendidos, clientes recorrentes, faturamento mensal.</p></div>
+        </div>
+
+        <h2>O que aprendi</h2>
+        <p>Meu primeiro projeto sério em <strong>Flutter</strong> me obrigou a aprender bem o ciclo de vida dos <code>widgets</code>, <code>Provider</code> para state management, e como estruturar um app multi-tela com <em>Navigator 2.0</em>. Firebase Auth e Firestore aceleraram muito o backend, deixando eu focar no que importava.</p>
+      </div>
+
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <h4>// detalhes</h4>
+          <div class="sidebar-row"><span class="k">Categoria</span><span class="v">Mobile · Flutter</span></div>
+          <div class="sidebar-row"><span class="k">Ano</span><span class="v">2026</span></div>
+          <div class="sidebar-row"><span class="k">Status</span><span class="v">Em desenvolvimento</span></div>
+          <div class="sidebar-row"><span class="k">Papel</span><span class="v">Desenvolvedor Mobile</span></div>
+          <div class="sidebar-row"><span class="k">Time</span><span class="v">Solo</span></div>
+        </div>
+        <div class="sidebar-card">
+          <h4>// stack</h4>
+          <div class="sidebar-row"><span class="v">Flutter 3.x</span></div>
+          <div class="sidebar-row"><span class="v">Dart</span></div>
+          <div class="sidebar-row"><span class="v">Firebase Auth</span></div>
+          <div class="sidebar-row"><span class="v">Firestore</span></div>
+          <div class="sidebar-row"><span class="v">Cloud Functions</span></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="next-project">
+  <div class="container">
+    <div class="np-inner">
+      <div>
+        <div class="np-label">// próximo projeto</div>
+        <a href="barpos.html" class="np-name">BarPOS →</a>
+      </div>
+      <a href="../projetos.html" class="btn btn-ghost">Ver todos</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div>© 2026 Carlos Augusto E. L. Rodero.</div>
+    <div>&lt; feito com HTML, CSS &amp; JS puro /&gt;</div>
+  </div>
+</footer>
+
+</body>
+</html>

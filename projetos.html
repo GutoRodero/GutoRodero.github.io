@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projetos — Carlos Rodero</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👨‍💻%3C/text%3E%3C/svg%3E">
+<style>
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding: 6px;
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  width: fit-content;
+}
+.filter-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  background: transparent;
+  color: var(--text-2);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.filter-btn:hover { color: var(--text-0); }
+.filter-btn.active {
+  background: var(--accent);
+  color: var(--bg-0);
+  font-weight: 500;
+}
+.filter-btn .count {
+  opacity: 0.5;
+  margin-left: 6px;
+}
+.filter-btn.active .count { opacity: 0.7; }
+
+.projects-header {
+  padding: 80px 0 40px;
+}
+.projects-header h1 {
+  font-size: clamp(38px, 6vw, 66px);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+.projects-header .lead {
+  color: var(--text-1);
+  font-size: 18px;
+  max-width: 620px;
+}
+.summary-bar {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+.summary-item {
+  font-family: var(--font-mono);
+}
+.summary-item .num {
+  font-size: 30px;
+  color: var(--accent);
+  font-weight: 700;
+  display: block;
+}
+.summary-item .lbl {
+  font-size: 12px;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-dot"></span>
+      <span>carlos.rodero</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#sobre">sobre</a></li>
+      <li><a href="index.html#formacao">formação</a></li>
+      <li><a href="projetos.html" class="active">projetos</a></li>
+      <li><a href="index.html#contato">contato</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="projects-header">
+  <div class="container">
+    <div class="hero-eyebrow">Portfólio</div>
+    <h1>Todos os <span class="accent">projetos</span>.</h1>
+    <p class="lead">Uma coleção do que já construí — projetos pessoais, exercícios acadêmicos e ideias novas em desenvolvimento. Mistura entre GitHub e trabalhos em andamento.</p>
+
+    <div class="summary-bar">
+      <div class="summary-item">
+        <span class="num">13</span>
+        <span class="lbl">projetos totais</span>
+      </div>
+      <div class="summary-item">
+        <span class="num">7</span>
+        <span class="lbl">no github</span>
+      </div>
+      <div class="summary-item">
+        <span class="num">6</span>
+        <span class="lbl">novos</span>
+      </div>
+      <div class="summary-item">
+        <span class="num">8+</span>
+        <span class="lbl">tecnologias</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section style="padding-top: 40px">
+  <div class="container">
+
+    <div class="filter-bar" role="tablist">
+      <button class="filter-btn active" data-filter="all">Todos <span class="count">13</span></button>
+      <button class="filter-btn" data-filter="github">GitHub <span class="count">7</span></button>
+      <button class="filter-btn" data-filter="new">Novos <span class="count">6</span></button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+      <button class="filter-btn" data-filter="ai">Visão / IA</button>
+    </div>
+
+    <div class="projects-grid" id="grid">
+
+      <!-- ============== NOVOS ============== -->
+
+      <a class="project-card" href="projetos/taskflow.html" data-tags="new web" data-github="https://github.com/GutoRodero/taskflow">
+        <span class="project-status new">Novo</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #1a3d2b 0%, #0a2418 100%)">
+          <svg width="180" height="120" viewBox="0 0 180 120" fill="none">
+            <rect x="20" y="20" width="45" height="80" rx="4" fill="#0f141c" stroke="#4dd0b0" stroke-width="1"/>
+            <rect x="26" y="28" width="33" height="8" rx="2" fill="#4dd0b0" opacity="0.3"/>
+            <rect x="26" y="42" width="33" height="16" rx="2" fill="#253044"/>
+            <rect x="26" y="64" width="33" height="16" rx="2" fill="#253044"/>
+            <rect x="70" y="20" width="45" height="80" rx="4" fill="#0f141c" stroke="#4dd0b0" stroke-width="1"/>
+            <rect x="76" y="28" width="33" height="8" rx="2" fill="#ffb347" opacity="0.3"/>
+            <rect x="76" y="42" width="33" height="24" rx="2" fill="#253044"/>
+            <rect x="120" y="20" width="45" height="80" rx="4" fill="#0f141c" stroke="#4dd0b0" stroke-width="1"/>
+            <rect x="126" y="28" width="33" height="8" rx="2" fill="#6ea8ff" opacity="0.3"/>
+            <rect x="126" y="42" width="33" height="16" rx="2" fill="#253044"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">full stack · saas</div>
+          <div class="project-title">TaskFlow</div>
+          <p class="project-desc">Sistema completo de gestão de tarefas estilo Kanban, com autenticação JWT, tempo real e colaboração em equipes.</p>
+          <div class="project-stack">
+            <span class="stack-chip">React</span>
+            <span class="stack-chip">Node.js</span>
+            <span class="stack-chip">PostgreSQL</span>
+            <span class="stack-chip">Socket.io</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="projetos/petcare.html" data-tags="new mobile" data-github="https://github.com/GutoRodero/petcare-manager">
+        <span class="project-status new">Novo</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #3d2b1a 0%, #241810 100%)">
+          <svg width="140" height="120" viewBox="0 0 140 120" fill="none">
+            <ellipse cx="70" cy="80" rx="18" ry="14" fill="#ffb347"/>
+            <ellipse cx="48" cy="55" rx="8" ry="10" fill="#ffb347"/>
+            <ellipse cx="62" cy="42" rx="8" ry="10" fill="#ffb347"/>
+            <ellipse cx="78" cy="42" rx="8" ry="10" fill="#ffb347"/>
+            <ellipse cx="92" cy="55" rx="8" ry="10" fill="#ffb347"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">mobile · flutter</div>
+          <div class="project-title">PetCare Manager</div>
+          <p class="project-desc">Aplicativo Flutter para petshops gerenciarem agenda de banho e tosa, cadastro de clientes e prontuário dos pets.</p>
+          <div class="project-stack">
+            <span class="stack-chip">Flutter</span>
+            <span class="stack-chip">Dart</span>
+            <span class="stack-chip">Firebase</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="projetos/barpos.html" data-tags="new web" data-github="https://github.com/GutoRodero/barpos">
+        <span class="project-status new">Novo</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #3d1a2b 0%, #241018 100%)">
+          <svg width="140" height="120" viewBox="0 0 140 120" fill="none">
+            <path d="M50 30 L90 30 L82 90 L58 90 Z" fill="none" stroke="#f56ba0" stroke-width="2"/>
+            <path d="M52 45 L88 45 L83 80 L57 80 Z" fill="#f56ba0" opacity="0.3"/>
+            <line x1="70" y1="30" x2="70" y2="18" stroke="#f56ba0" stroke-width="2"/>
+            <circle cx="70" cy="15" r="4" fill="#f56ba0"/>
+            <rect x="55" y="95" width="30" height="4" rx="2" fill="#f56ba0"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">pos · gestão</div>
+          <div class="project-title">BarPOS</div>
+          <p class="project-desc">Sistema de PDV para bares e restaurantes com controle de comandas, mesas, estoque e relatórios de vendas em tempo real.</p>
+          <div class="project-stack">
+            <span class="stack-chip">PHP</span>
+            <span class="stack-chip">Laravel</span>
+            <span class="stack-chip">MySQL</span>
+            <span class="stack-chip">Alpine.js</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="projetos/snippet-vault.html" data-tags="new web" data-github="https://github.com/GutoRodero/codesnippet-vault">
+        <span class="project-status new">Novo</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #1a2b3d 0%, #0a1424 100%)">
+          <svg width="160" height="120" viewBox="0 0 160 120" fill="none">
+            <rect x="15" y="20" width="130" height="80" rx="6" fill="#0f141c" stroke="#6ea8ff" stroke-width="1"/>
+            <circle cx="24" cy="30" r="2.5" fill="#ff5f56"/>
+            <circle cx="32" cy="30" r="2.5" fill="#ffbd2e"/>
+            <circle cx="40" cy="30" r="2.5" fill="#27c93f"/>
+            <line x1="22" y1="42" x2="60" y2="42" stroke="#6ea8ff" stroke-width="1.5"/>
+            <line x1="22" y1="52" x2="90" y2="52" stroke="#4dd0b0" stroke-width="1.5"/>
+            <line x1="34" y1="62" x2="110" y2="62" stroke="#ffb347" stroke-width="1.5"/>
+            <line x1="22" y1="72" x2="70" y2="72" stroke="#b794f6" stroke-width="1.5"/>
+            <line x1="22" y1="82" x2="100" y2="82" stroke="#6ea8ff" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">produtividade</div>
+          <div class="project-title">CodeSnippet Vault</div>
+          <p class="project-desc">Biblioteca pessoal offline-first para salvar e organizar trechos de código, com busca fuzzy, tags e highlight de sintaxe.</p>
+          <div class="project-stack">
+            <span class="stack-chip">JavaScript</span>
+            <span class="stack-chip">IndexedDB</span>
+            <span class="stack-chip">PWA</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="projetos/devweather.html" data-tags="new web" data-github="https://github.com/GutoRodero/devweather">
+        <span class="project-status new">Novo</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #0f2b3d 0%, #051824 100%)">
+          <svg width="160" height="120" viewBox="0 0 160 120" fill="none">
+            <path d="M50 60 Q40 60 40 50 Q40 40 55 40 Q60 30 75 30 Q95 30 95 50 Q110 50 110 65 L45 65 Q50 65 50 60 Z" fill="#6ea8ff" opacity="0.3"/>
+            <path d="M50 60 Q40 60 40 50 Q40 40 55 40 Q60 30 75 30 Q95 30 95 50 Q110 50 110 65 L45 65 Q50 65 50 60 Z" stroke="#6ea8ff" stroke-width="1.5" fill="none"/>
+            <line x1="55" y1="75" x2="60" y2="90" stroke="#6ea8ff" stroke-width="2" stroke-linecap="round"/>
+            <line x1="75" y1="75" x2="80" y2="90" stroke="#6ea8ff" stroke-width="2" stroke-linecap="round"/>
+            <line x1="95" y1="75" x2="100" y2="90" stroke="#6ea8ff" stroke-width="2" stroke-linecap="round"/>
+            <text x="130" y="45" font-family="monospace" font-size="14" fill="#4dd0b0" font-weight="bold">23°</text>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">api · terminal</div>
+          <div class="project-title">DevWeather</div>
+          <p class="project-desc">Dashboard de clima com estética de terminal, integrando OpenWeather API. Comandos estilo CLI para consultar previsões.</p>
+          <div class="project-stack">
+            <span class="stack-chip">JavaScript</span>
+            <span class="stack-chip">API REST</span>
+            <span class="stack-chip">Canvas</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="projetos/qr-menu.html" data-tags="new web" data-github="https://github.com/GutoRodero/qr-menu-digital">
+        <span class="project-status new">Novo</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #2b1a3d 0%, #180a24 100%)">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+            <rect x="20" y="20" width="80" height="80" rx="8" fill="#0f141c" stroke="#b794f6" stroke-width="1.5"/>
+            <!-- QR pattern -->
+            <rect x="28" y="28" width="16" height="16" fill="#b794f6"/>
+            <rect x="32" y="32" width="8" height="8" fill="#0f141c"/>
+            <rect x="76" y="28" width="16" height="16" fill="#b794f6"/>
+            <rect x="80" y="32" width="8" height="8" fill="#0f141c"/>
+            <rect x="28" y="76" width="16" height="16" fill="#b794f6"/>
+            <rect x="32" y="80" width="8" height="8" fill="#0f141c"/>
+            <rect x="52" y="34" width="4" height="4" fill="#b794f6"/>
+            <rect x="60" y="34" width="4" height="4" fill="#b794f6"/>
+            <rect x="52" y="42" width="4" height="4" fill="#b794f6"/>
+            <rect x="68" y="52" width="4" height="4" fill="#b794f6"/>
+            <rect x="52" y="60" width="4" height="4" fill="#b794f6"/>
+            <rect x="60" y="60" width="4" height="4" fill="#b794f6"/>
+            <rect x="76" y="68" width="4" height="4" fill="#b794f6"/>
+            <rect x="52" y="76" width="4" height="4" fill="#b794f6"/>
+            <rect x="60" y="84" width="4" height="4" fill="#b794f6"/>
+            <rect x="68" y="76" width="4" height="4" fill="#b794f6"/>
+            <rect x="76" y="84" width="4" height="4" fill="#b794f6"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">web · mobile-first</div>
+          <div class="project-title">QR Menu Digital</div>
+          <p class="project-desc">Plataforma de cardápio digital para restaurantes: cliente escaneia QR na mesa e acessa cardápio interativo com fotos e preços.</p>
+          <div class="project-stack">
+            <span class="stack-chip">Vue 3</span>
+            <span class="stack-chip">Firebase</span>
+            <span class="stack-chip">Tailwind</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- ============== GITHUB ============== -->
+
+      <a class="project-card" href="https://github.com/GutoRodero/air_drawing" target="_blank" rel="noopener" id="air-drawing" data-tags="github ai">
+        <span class="project-status github">GitHub</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #1a2b3d 0%, #0a1424 100%)">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+            <circle cx="60" cy="60" r="42" stroke="#4dd0b0" stroke-width="1.5" opacity="0.3"/>
+            <path d="M25 90 Q40 40, 60 55 T95 30" stroke="#4dd0b0" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <circle cx="95" cy="30" r="6" fill="#4dd0b0"/>
+            <circle cx="95" cy="30" r="12" fill="#4dd0b0" opacity="0.2"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">visão computacional</div>
+          <div class="project-title">Air Drawing</div>
+          <p class="project-desc">Aplicação em Python que permite desenhar no ar usando apenas a webcam, com detecção de gestos e rastreamento em tempo real dos dedos.</p>
+          <div class="project-stack">
+            <span class="stack-chip">Python</span>
+            <span class="stack-chip">OpenCV</span>
+            <span class="stack-chip">MediaPipe</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://github.com/GutoRodero/Gesture_Control" target="_blank" rel="noopener" id="gesture-control" data-tags="github ai">
+        <span class="project-status github">GitHub</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #2b1a3d 0%, #100a24 100%)">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+            <g transform="translate(60 60)">
+              <rect x="-25" y="-25" width="50" height="50" stroke="#b794f6" stroke-width="1.5" fill="none" transform="rotate(15)"/>
+              <rect x="-25" y="-25" width="50" height="50" stroke="#b794f6" stroke-width="1.5" fill="none" transform="rotate(35)" opacity="0.6"/>
+              <rect x="-25" y="-25" width="50" height="50" stroke="#b794f6" stroke-width="1.5" fill="none" transform="rotate(55)" opacity="0.3"/>
+            </g>
+            <circle cx="30" cy="90" r="5" fill="#b794f6"/>
+            <circle cx="90" cy="90" r="5" fill="#b794f6"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">visão · 3D</div>
+          <div class="project-title">Gesture Control</div>
+          <p class="project-desc">Projeto para manipular formas 3D em tempo real usando gestos capturados pela webcam. Interação natural com objetos virtuais.</p>
+          <div class="project-stack">
+            <span class="stack-chip">Python</span>
+            <span class="stack-chip">MediaPipe</span>
+            <span class="stack-chip">OpenGL</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://github.com/GutoRodero/GuerreiroOffline" target="_blank" rel="noopener" id="guerreiro-offline" data-tags="github web">
+        <span class="project-status github">GitHub</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #3d2b0a 0%, #241a05 100%)">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+            <rect x="30" y="35" width="60" height="55" rx="4" fill="#0f141c" stroke="#ffb347" stroke-width="1.5"/>
+            <rect x="35" y="42" width="50" height="14" fill="#ffb347" opacity="0.2"/>
+            <text x="60" y="53" font-family="monospace" font-size="10" fill="#ffb347" text-anchor="middle">R$ 245,00</text>
+            <circle cx="45" cy="70" r="5" fill="#ffb347" opacity="0.4"/>
+            <circle cx="60" cy="70" r="5" fill="#ffb347" opacity="0.4"/>
+            <circle cx="75" cy="70" r="5" fill="#ffb347" opacity="0.4"/>
+            <rect x="35" y="80" width="50" height="6" rx="2" fill="#ffb347" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">php · caixa</div>
+          <div class="project-title">Guerreiro Offline</div>
+          <p class="project-desc">Sistema de caixa desenvolvido em PHP para treino e futura utilização. ⭐ 2 stars.</p>
+          <div class="project-stack">
+            <span class="stack-chip">PHP</span>
+            <span class="stack-chip">MySQL</span>
+            <span class="stack-chip">HTML5</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://github.com/GutoRodero/Curso_Laravel" target="_blank" rel="noopener" id="curso-laravel" data-tags="github web">
+        <span class="project-status github">GitHub</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #3d1010 0%, #240808 100%)">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+            <path d="M60 25 L90 45 L90 75 L60 95 L30 75 L30 45 Z" stroke="#ff2d20" stroke-width="2" fill="none"/>
+            <path d="M60 25 L60 95 M30 45 L90 75 M90 45 L30 75" stroke="#ff2d20" stroke-width="1.5" opacity="0.5"/>
+            <text x="60" y="65" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#ff2d20">Laravel</text>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">framework · php</div>
+          <div class="project-title">Curso Laravel</div>
+          <p class="project-desc">Projeto de estudo sobre o framework Laravel baseado no curso do Mateus Battisti, explorando MVC, migrations, blade e eloquent.</p>
+          <div class="project-stack">
+            <span class="stack-chip">Laravel</span>
+            <span class="stack-chip">PHP</span>
+            <span class="stack-chip">Blade</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://github.com/GutoRodero/Site_Estagio" target="_blank" rel="noopener" id="site-estagio" data-tags="github web">
+        <span class="project-status github">GitHub</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #3d3510 0%, #241f08 100%)">
+          <svg width="160" height="120" viewBox="0 0 160 120" fill="none">
+            <rect x="20" y="25" width="120" height="80" rx="4" fill="#0f141c" stroke="#f7df1e" stroke-width="1.5"/>
+            <rect x="20" y="25" width="120" height="14" fill="#f7df1e" opacity="0.2"/>
+            <circle cx="27" cy="32" r="2" fill="#f7df1e"/>
+            <circle cx="34" cy="32" r="2" fill="#f7df1e"/>
+            <circle cx="41" cy="32" r="2" fill="#f7df1e"/>
+            <rect x="30" y="50" width="45" height="30" rx="2" fill="#f7df1e" opacity="0.2"/>
+            <rect x="85" y="50" width="45" height="30" rx="2" fill="#f7df1e" opacity="0.2"/>
+            <rect x="30" y="85" width="100" height="10" rx="2" fill="#f7df1e" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">estágio</div>
+          <div class="project-title">Site Estágio</div>
+          <p class="project-desc">Site contendo as atividades realizadas durante o processo de ingresso no estágio. Primeiros passos na jornada profissional.</p>
+          <div class="project-stack">
+            <span class="stack-chip">JavaScript</span>
+            <span class="stack-chip">HTML5</span>
+            <span class="stack-chip">CSS3</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://github.com/GutoRodero/DWI" target="_blank" rel="noopener" id="dwi" data-tags="github web">
+        <span class="project-status github">GitHub</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #10353d 0%, #051f24 100%)">
+          <svg width="160" height="120" viewBox="0 0 160 120" fill="none">
+            <text x="80" y="70" text-anchor="middle" font-family="monospace" font-size="34" font-weight="bold" fill="#4dd0b0">&lt;/&gt;</text>
+            <line x1="30" y1="90" x2="130" y2="90" stroke="#4dd0b0" stroke-width="1.5"/>
+            <text x="80" y="102" text-anchor="middle" font-family="monospace" font-size="9" fill="#4dd0b0">DWI</text>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">acadêmico</div>
+          <div class="project-title">DWI</div>
+          <p class="project-desc">Atividades de Desenvolvimento Web I. Base sólida em HTML, CSS e JavaScript, com exercícios acadêmicos progressivos.</p>
+          <div class="project-stack">
+            <span class="stack-chip">HTML</span>
+            <span class="stack-chip">CSS</span>
+            <span class="stack-chip">JavaScript</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://github.com/GutoRodero/dw3" target="_blank" rel="noopener" id="dw3" data-tags="github web">
+        <span class="project-status github">GitHub</span>
+        <div class="project-preview" style="background:linear-gradient(135deg, #3d1035 0%, #24081f 100%)">
+          <svg width="160" height="120" viewBox="0 0 160 120" fill="none">
+            <text x="80" y="70" text-anchor="middle" font-family="monospace" font-size="30" font-weight="bold" fill="#b794f6">JS</text>
+            <text x="80" y="90" text-anchor="middle" font-family="monospace" font-size="12" fill="#b794f6">DW3 · EAD</text>
+            <rect x="30" y="30" width="100" height="60" rx="4" fill="none" stroke="#b794f6" stroke-width="1" opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">acadêmico</div>
+          <div class="project-title">DW3 / ExercicioEAD_DW3</div>
+          <p class="project-desc">Repositórios das atividades de Desenvolvimento Web III, incluindo exercícios EAD e projetos práticos em JavaScript moderno.</p>
+          <div class="project-stack">
+            <span class="stack-chip">JavaScript</span>
+            <span class="stack-chip">Node.js</span>
+            <span class="stack-chip">EAD</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Callout for GitHub -->
+    <div style="margin-top: 60px; padding: 32px; background: var(--bg-1); border: 1px solid var(--border); border-radius: 14px; text-align: center;">
+      <div style="font-family: var(--font-mono); font-size: 13px; color: var(--accent); margin-bottom: 10px">// veja mais no meu</div>
+      <h3 style="font-size: 24px; margin-bottom: 12px">GitHub</h3>
+      <p style="color: var(--text-2); max-width: 500px; margin: 0 auto 24px">Todos os códigos-fonte, contribuições e atividades acadêmicas estão disponíveis publicamente.</p>
+      <a class="btn btn-primary" href="https://github.com/GutoRodero" target="_blank">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        Visitar github.com/GutoRodero
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div>© 2026 Carlos Augusto E. L. Rodero.</div>
+    <div>&lt; feito com HTML, CSS &amp; JS puro /&gt;</div>
+  </div>
+</footer>
+
+<script>
+// Filter
+const filterBtns = document.querySelectorAll('.filter-btn');
+const cards = document.querySelectorAll('#grid .project-card');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+
+    cards.forEach(card => {
+      const tags = (card.dataset.tags || '').split(' ');
+      const show = filter === 'all' || tags.includes(filter);
+      card.style.display = show ? '' : 'none';
+    });
+  });
+});
+
+// Reveal
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+  });
+}, { threshold: 0.05 });
+
+cards.forEach(c => { c.classList.add('reveal'); io.observe(c); });
+</script>
+
+</body>
+</html>
